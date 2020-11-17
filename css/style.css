@@ -544,10 +544,6 @@ img {
   padding-right: 30px;
 }
 
-.shell .content-wrap .row.first-section [class^="col-"], .shell .content-wrap .row.first-section [class*=" col-"] {
-  padding: 0;
-}
-
 @media (max-width: 1023px) {
   .shell .content-wrap {
     padding-left: 120px;
@@ -559,6 +555,9 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 44px;
+  }
+  .shell .content-wrap .row.first-section [class^="col-"], .shell .content-wrap .row.first-section [class*=" col-"] {
+    padding: 0;
   }
 }
 
