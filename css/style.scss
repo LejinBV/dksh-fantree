@@ -356,11 +356,7 @@ img{
     overflow-x: hidden;
     overflow-y: auto;
     padding-right: 30px;
-    .row.first-section{
-      [class^="col-"], [class*=" col-"]{
-        padding: 0;
-      }
-    }
+    
     @media (max-width:1023px) {
       padding-left: 120px;
     }
@@ -368,6 +364,11 @@ img{
      padding-left: 15px;
      padding-right: 15px;
      padding-top: 44px;
+     .row.first-section{
+      [class^="col-"], [class*=" col-"]{
+        padding: 0;
+      }
+    }
     }
     
     .f-banner{
