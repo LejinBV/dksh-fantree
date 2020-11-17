@@ -63,7 +63,7 @@ img{
 }
 
 .hamberger{
-  background: $black;
+  background: $bg-grey;
   padding: 10px 20px;
   vertical-align: middle;
   width: 98px;
@@ -86,7 +86,7 @@ img{
     }
     small, i{
       height: 2px;
-      background: #ffffff;
+      background: $f-red;
       display: block;
       width: 100%;
       border-radius: 0;
