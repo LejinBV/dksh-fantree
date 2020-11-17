@@ -215,7 +215,7 @@ img {
 }
 
 .hamberger {
-  background: #000;
+  background: #FAF8F7;
   padding: 10px 20px;
   vertical-align: middle;
   width: 98px;
@@ -243,7 +243,7 @@ img {
 
 .hamberger .navbar-toggler small, .hamberger .navbar-toggler i {
   height: 2px;
-  background: #ffffff;
+  background: #AB1032;
   display: block;
   width: 100%;
   border-radius: 0;
