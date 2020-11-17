@@ -476,6 +476,10 @@ img{
   // home page list style starts here
   .article-list{
     padding-top: 50px;
+    @media (max-width:1023px) {
+      padding-top: 35px;
+      
+    }
     .mob-filter{
       margin-bottom: 30px;
     }
@@ -511,6 +515,34 @@ img{
           }
         }
       }
+    }
+  }
+}
+
+
+.quick-access{
+  padding: 0 0;
+  margin-top: 30px;
+  .cat-wrap{
+    display: block;
+    background: $white;
+    padding: 15px;
+    color: $f-grey;
+    text-align: center;
+    i{
+      width: 100%;
+      display: block;
+      background:$f-red;
+      padding: 20px 0; 
+      margin-bottom: 15px;
+      &:before{
+        text-align: center;
+        font-size: 40px;
+        color: $white;
+      }
+    }
+    &:hover{
+      text-decoration: none;
     }
   }
 }
