@@ -1,0 +1,734 @@
+.ul-reset, .shell .nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ul-reset li, .shell .nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .hamberger .navbar-toggler small, .hamberger .navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .article-list a {
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+}
+
+.line-hover:after, .shell .nav ul li > a:after {
+  content: "";
+  height: 1px;
+  background: #AB1032;
+  width: 0px;
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+.line-hover:hover, .shell .nav ul li > a:hover {
+  color: #AB1032;
+}
+
+.line-hover:hover:after, .shell .nav ul li > a:hover:after {
+  content: "";
+  width: 80%;
+  margin-left: -40%;
+  position: absolute;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?2mk8t6");
+  src: url("fonts/icomoon.eot?2mk8t6#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?2mk8t6") format("truetype"), url("fonts/icomoon.woff?2mk8t6") format("woff"), url("fonts/icomoon.svg?2mk8t6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-point-to-right:before {
+  content: "\e909";
+}
+
+.icon-toolbox:before {
+  content: "\e900";
+}
+
+.icon-branding:before {
+  content: "\e901";
+}
+
+.icon-dksh-wear:before {
+  content: "\e902";
+}
+
+.icon-readmore-arrow:before {
+  content: "\e903";
+}
+
+.icon-coffee:before {
+  content: "\e904";
+}
+
+.icon-workspace:before {
+  content: "\e905";
+}
+
+.icon-link:before {
+  content: "\e906";
+}
+
+.icon-edit:before {
+  content: "\e907";
+}
+
+.icon-filter:before {
+  content: "\e908";
+}
+
+.icon-expenses:before {
+  content: "\eaeb";
+}
+
+.icon-dksh-app:before {
+  content: "\eaec";
+}
+
+.icon-e-learning:before {
+  content: "\eaed";
+}
+
+.icon-fantree-news:before {
+  content: "\eaee";
+}
+
+.icon-hr-zone:before {
+  content: "\eaef";
+}
+
+.icon-it-desk:before {
+  content: "\eaf0";
+}
+
+.icon-leave:before {
+  content: "\eaf1";
+}
+
+.icon-password-self-service:before {
+  content: "\eaf2";
+}
+
+.icon-picture-park:before {
+  content: "\eaf3";
+}
+
+.icon-portal-sites:before {
+  content: "\eaf4";
+}
+
+.icon-talent-portal:before {
+  content: "\eaf5";
+}
+
+.icon-travel:before {
+  content: "\eaf6";
+}
+
+body, html {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+body *, html * {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 10px 35px;
+  border-radius: 0;
+}
+
+.btn.btn-primary {
+  background: #AB1032;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #AB1032;
+}
+
+.btn.btn-secondary {
+  background: #fff;
+  color: #404040;
+  font-size: 16px;
+  border: 1px solid #fff;
+}
+
+.btn.btn-tertiary {
+  background: #fff;
+  color: #404040;
+  font-size: 16px;
+  border: 2px solid #AB1032;
+}
+
+.btn.btn-tertiary:hover {
+  background: #AB1032;
+  color: #fff;
+  border: 2px solid #7c0c24;
+}
+
+.heading-1 {
+  font-size: 57px;
+  font-weight: bold;
+  color: #404040;
+}
+
+.heading-2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #404040;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.heading-3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #404040;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.hamberger {
+  background: #000;
+  padding: 10px 20px;
+  vertical-align: middle;
+  width: 98px;
+  position: fixed;
+  z-index: 100;
+  text-align: center;
+}
+
+.hamberger .navbar-toggler {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1;
+  background-color: transparent;
+  border: 0px solid #fff;
+  border-radius: 0;
+  vertical-align: middle;
+  padding: 3px;
+  margin: auto;
+  width: 30px;
+}
+
+.hamberger .navbar-toggler small {
+  position: relative;
+}
+
+.hamberger .navbar-toggler small, .hamberger .navbar-toggler i {
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+}
+
+.hamberger .navbar-toggler small:last-child, .hamberger .navbar-toggler i:last-child {
+  margin-bottom: 0;
+}
+
+.hamberger .navbar-toggler small i, .hamberger .navbar-toggler i i {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -7px;
+}
+
+.hamberger .navbar-toggler small i:last-child, .hamberger .navbar-toggler i i:last-child {
+  bottom: 7px;
+}
+
+.hamberger .navbar-toggler:focus {
+  outline: 0 none;
+}
+
+.hamberger .navbar-toggler.active i {
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  width: 13px;
+  bottom: 4px;
+}
+
+.hamberger .navbar-toggler.active i:last-child {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  bottom: -4px;
+}
+
+.f-nav {
+  padding: 27px 0;
+  background: #AB1032;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 105;
+}
+
+.shell {
+  margin: 0;
+  padding: 54px 0 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.shell .nav {
+  position: fixed;
+  left: 0;
+  top: 55px;
+  z-index: 100;
+  width: 134px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  border-right: 1px solid #e6e6e6;
+}
+
+.shell .nav::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .shell .nav {
+    width: 98px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shell .nav {
+    top: 98px;
+  }
+}
+
+.shell .nav ul {
+  display: block;
+}
+
+.shell .nav ul li {
+  display: block;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.shell .nav ul li > a {
+  display: block;
+  padding: 20px 15px;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #404040;
+  font-size: 13px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shell .nav ul li > a i {
+  display: inline-block;
+  width: 100%;
+}
+
+.shell .nav ul li > a i::before {
+  font-size: 40px;
+}
+
+@media (max-width: 1023px) {
+  .shell .nav ul li > a i::before {
+    font-size: 26px;
+  }
+}
+
+.shell .nav ul li > a small {
+  display: block;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  line-height: 1px;
+  margin-top: 10px;
+}
+
+.shell .nav ul li > a small:before {
+  color: #404040;
+  line-height: 1px;
+}
+
+.shell .nav ul li > a:hover i {
+  color: #AB1032;
+}
+
+.shell .nav ul li.main:first-child a, .shell .nav ul li.main:nth-child(2) a {
+  color: #AB1032;
+}
+
+.shell .nav ul li .menu {
+  position: fixed;
+  left: 125px;
+  width: 300px;
+  background: #fff;
+  top: 55px;
+  padding: 0px 20px;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 0;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  border-right: 1px solid #e6e6e6;
+  z-index: 20;
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .shell .nav ul li .menu {
+    left: 40px;
+  }
+}
+
+.shell .nav ul li .menu::-webkit-scrollbar {
+  display: none;
+}
+
+.shell .nav ul li .menu .accordion {
+  margin-right: 2px;
+}
+
+.shell .nav ul li .menu .accordion .card {
+  border: 0 none;
+}
+
+.shell .nav ul li .menu .accordion .card .card-header {
+  text-align: left;
+  background: none;
+  padding: 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.shell .nav ul li .menu .accordion .card .card-header * {
+  text-align: left;
+}
+
+.shell .nav ul li .menu .accordion .card .card-header a {
+  text-align: left;
+  padding: 23px 0;
+  display: block;
+  width: auto;
+  font-size: 14px;
+  color: #404040;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+}
+
+.shell .nav ul li .menu .accordion .card .card-header a::before {
+  position: absolute;
+  right: 0px;
+  top: 28px;
+  color: #AB1032;
+  z-index: 100;
+  font-size: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.shell .nav ul li .menu .accordion .card .card-header a.collapsed::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.shell .nav ul li .menu .accordion .card .menu-inner {
+  text-align: left;
+  border: 1px solid #e6e6e6;
+  text-align: left;
+}
+
+.shell .nav ul li .menu .accordion .card .menu-inner a {
+  width: auto;
+  text-align: left;
+  padding: 13px 20px;
+  display: block;
+  border-bottom: 1px dotted #e6e6e6;
+  color: #404040;
+}
+
+.shell .nav ul li .menu .accordion .card .menu-inner a:last-child {
+  border-bottom: none 0;
+}
+
+.shell .nav ul li .menu .accordion .card .menu-inner a:before {
+  color: #AB1032;
+  font-size: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .shell .nav ul li:hover * {
+    text-decoration: none;
+  }
+  .shell .nav ul li:hover .menu {
+    opacity: 1;
+    visibility: visible;
+    left: 134px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .shell .nav ul li:hover .menu {
+    left: 95px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shell .nav {
+    left: -50px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .shell .nav.in {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+  .shell .nav.in .menu {
+    width: calc(100% - 95px);
+    left: 40px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .shell .nav.in .mb-m-active .menu {
+    left: 98px;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.shell .content-wrap {
+  padding-left: 160px;
+  background: #FAF8F7;
+  height: 100vh;
+  padding-top: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 30px;
+}
+
+.shell .content-wrap .row.first-section [class^="col-"], .shell .content-wrap .row.first-section [class*=" col-"] {
+  padding: 0;
+}
+
+@media (max-width: 1023px) {
+  .shell .content-wrap {
+    padding-left: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shell .content-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 44px;
+  }
+}
+
+.shell .content-wrap .f-banner {
+  height: 100%;
+}
+
+.shell .content-wrap .f-banner .row {
+  margin: 0;
+  padding: 0;
+}
+
+.shell .content-wrap .f-banner .row [class^="col-"], .shell .content-wrap .f-banner .row [class*=" col-"] {
+  margin: 0;
+  padding: 0;
+}
+
+.shell .content-wrap .f-banner .controller-wrap {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  bottom: 0;
+  height: 60px;
+  width: 120px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .shell .content-wrap .f-banner .controller-wrap {
+    width: 73px;
+    height: 40px;
+  }
+}
+
+.shell .content-wrap .f-banner .controller-wrap a {
+  width: 50%;
+  background: #fff;
+  opacity: 1;
+}
+
+.shell .content-wrap .f-banner .controller-wrap a.carousel-control-next {
+  background: #000;
+}
+
+.shell .content-wrap .f-banner .controller-wrap a.carousel-control-prev .carousel-control-prev-icon {
+  fill: '%23000';
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.shell .content-wrap .f-banner .banner-image {
+  background: url(../images/dummy-banner.jpg) center;
+  height: 480px;
+  background-size: cover;
+}
+
+.shell .content-wrap .f-banner .red-bg {
+  background: #AB1032;
+}
+
+.shell .content-wrap .f-banner .red-bg .banner-content {
+  margin: auto;
+  color: #fff;
+  padding: 12%;
+}
+
+.shell .content-wrap .f-banner .red-bg .banner-content span {
+  font-size: 40px;
+  display: block;
+  line-height: 20px;
+}
+
+.shell .content-wrap .f-banner .red-bg .banner-content p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.shell .content-wrap .profile {
+  background: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.shell .content-wrap .profile .prof-wrap {
+  margin: auto;
+  text-align: center;
+}
+
+.shell .content-wrap .profile .prof-wrap .prof-pic {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.shell .content-wrap .profile .prof-wrap p {
+  margin-bottom: 5px;
+}
+
+.shell .content-wrap .profile .prof-wrap .welcome {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.shell .content-wrap .profile .prof-wrap .name {
+  font-size: 25px;
+  color: #AB1032;
+}
+
+.shell .content-wrap .profile .prof-wrap .email {
+  font-size: 16px;
+  color: #404040;
+}
+
+.shell .content-wrap .profile .prof-wrap .btn {
+  margin-top: 20px;
+}
+
+.shell .content-wrap .profile .prof-wrap .btn i {
+  margin-left: 15px;
+}
+
+.shell .article-list {
+  padding-top: 50px;
+}
+
+.shell .article-list .mob-filter {
+  margin-bottom: 30px;
+}
+
+.shell .article-list a {
+  display: block;
+}
+
+.shell .article-list a .brief {
+  background: #fff;
+  padding: 30px;
+}
+
+.shell .article-list a .brief span {
+  color: #AB1032;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: bold;
+}
+
+.shell .article-list a .brief p {
+  color: #969698;
+}
+
+.shell .article-list a .brief small {
+  display: inline-block;
+}
+
+.shell .article-list a:hover {
+  -webkit-box-shadow: 0px 6px 12px #d9d9d9;
+          box-shadow: 0px 6px 12px #d9d9d9;
+  text-decoration: none;
+  margin-top: -5px;
+}
+
+.shell .article-list a:hover .brief .btn.btn-tertiary {
+  background: #AB1032;
+  color: #fff;
+  border: 2px solid #7c0c24;
+}
+/*# sourceMappingURL=style.css.map */

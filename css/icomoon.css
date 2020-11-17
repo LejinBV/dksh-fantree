@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?2mk8t6");
+  src: url("fonts/icomoon.eot?2mk8t6#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?2mk8t6") format("truetype"), url("fonts/icomoon.woff?2mk8t6") format("woff"), url("fonts/icomoon.svg?2mk8t6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-point-to-right:before {
+  content: "\e909";
+}
+
+.icon-toolbox:before {
+  content: "\e900";
+}
+
+.icon-branding:before {
+  content: "\e901";
+}
+
+.icon-dksh-wear:before {
+  content: "\e902";
+}
+
+.icon-readmore-arrow:before {
+  content: "\e903";
+}
+
+.icon-coffee:before {
+  content: "\e904";
+}
+
+.icon-workspace:before {
+  content: "\e905";
+}
+
+.icon-link:before {
+  content: "\e906";
+}
+
+.icon-edit:before {
+  content: "\e907";
+}
+
+.icon-filter:before {
+  content: "\e908";
+}
+
+.icon-expenses:before {
+  content: "\eaeb";
+}
+
+.icon-dksh-app:before {
+  content: "\eaec";
+}
+
+.icon-e-learning:before {
+  content: "\eaed";
+}
+
+.icon-fantree-news:before {
+  content: "\eaee";
+}
+
+.icon-hr-zone:before {
+  content: "\eaef";
+}
+
+.icon-it-desk:before {
+  content: "\eaf0";
+}
+
+.icon-leave:before {
+  content: "\eaf1";
+}
+
+.icon-password-self-service:before {
+  content: "\eaf2";
+}
+
+.icon-picture-park:before {
+  content: "\eaf3";
+}
+
+.icon-portal-sites:before {
+  content: "\eaf4";
+}
+
+.icon-talent-portal:before {
+  content: "\eaf5";
+}
+
+.icon-travel:before {
+  content: "\eaf6";
+}
+/*# sourceMappingURL=icomoon.css.map */

@@ -1,0 +1,49 @@
+$f-red: #AB1032;
+$f-grey: #404040;
+$f-t-grey: #969698;
+$black: #000;
+$white: #fff;
+$bg-grey: #FAF8F7;
+
+
+$menu-border: lighten($f-grey, 65);
+
+
+.ul-reset{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.anim-eas-in{
+	transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+}
+
+.line-hover{
+  &:after{
+		content: "";
+		height: 1px;
+		background: $f-red;
+		width: 0px;
+		left: 50%;
+		position: absolute;
+		bottom: 0;
+		@extend .anim-eas-in;
+	}
+	&:hover{
+		color: $f-red;
+		&:after{
+			content: "";
+			width: 80%;
+			margin-left: -40%;
+			position: absolute;
+		}
+	}
+}
