@@ -2,9 +2,10 @@
 @import "icomoon";
 
 body, html{
-  height: 100vh;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
+  color:$f-t-grey ;
   *{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
@@ -41,22 +42,78 @@ img{
   }
 }
 
+.accordion {
+  &.ft-acc-style-white {
+    background: transparent;
+    .card {
+      background: $white;
+      border: 0 none;
+      margin-bottom: 1.875rem;
+    }
+    .card-header {
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border-bottom: 1px solid darken($white, 5%);
+      position: relative;
+      cursor: pointer;
+      .acc-title {
+        font-size: 1.875rem;
+        font-weight: bold;
+        color: $f-grey;
+        padding: 1.5rem 1.875rem;
+        small{
+          position: absolute;
+          right: 30px;
+          width: 13px;
+          height: 3px;
+          border-radius: 3px;
+          background: $f-red;
+          display: block;
+          top: calc(50% - 1px);
+          &:after{
+            content: "";
+            @extend .anim-eas-in;
+            @extend small;
+            transform: rotate(0);
+            display: block;
+            right: 0;
+            top: 0;
+          }
+        }
+        &.collapsed{
+          small{
+            &:after{
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+    .card-body {
+      padding: 0;
+      .inner{
+        padding: 1.875rem 1.875rem;
+      }
+    }
+  }
+}
 
 
 .heading-1{
-  font-size: 57px;
+  font-size: 3.5625rem;
   font-weight: bold;
   color: $f-grey;
 }
 .heading-2{
-  font-size: 30px;
   font-weight: bold;
   color: $f-grey;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin-bottom: 20px;
+  font-size: 1.875rem;
 }
 .heading-3{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: $f-grey;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -70,7 +127,7 @@ img{
   position: fixed;
   z-index: 100;
   text-align: center;
-  .navbar-toggler {
+  button.navbar-toggler {
     padding: 10px;
     font-size: 12px;
     line-height: 1;
@@ -94,14 +151,14 @@ img{
       &:last-child{
         margin-bottom: 0;
       }
-      i{
-        position: absolute;
-        left: 0;
-        width: 100%;
-        bottom: -7px;
-        &:last-child{
-          bottom:7px;
-        }
+    }
+    i{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: -7px;
+      &:last-child{
+        bottom:7px;
       }
     }
     &:focus{
@@ -134,6 +191,7 @@ img{
   padding: 54px 0 0 0;
   overflow: hidden;
   position: relative;
+  height: 100%;
   .nav{
     position: fixed;
     left: 0;
@@ -286,15 +344,26 @@ img{
                   display: block;
                   border-bottom: 1px dotted $menu-border;
                   color: $f-grey;
+                  padding-left: 55px;
+                  position: relative;
                   &:last-child{
                     border-bottom:none 0;
                   }
                   &:before {
-                    color: $f-red;
+                    color: $f-grey;
                     font-size: 25px;
                     display: inline-block;
                     vertical-align: middle;
                     margin-right: 12px;
+                    position: absolute;
+                    left: 15px;
+                    top: 15px;
+                    @extend .anim-eas-in;
+                  }
+                  &:hover{
+                    &::before{
+                      color: $f-red;
+                    }
                   }
                 }
                 text-align: left;
@@ -351,7 +420,7 @@ img{
   .content-wrap{
     padding-left: 160px;
     background: $bg-grey;
-    height: 100vh;
+    height: 100%;
     padding-top: 30px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -441,7 +510,7 @@ img{
       .prof-wrap{
         margin: auto;
         text-align: center;
-        .prof-pic{
+        >.prof-pic{
           border-radius: 50%;
           overflow: hidden;
           width: 50%;
@@ -533,17 +602,385 @@ img{
     i{
       width: 100%;
       display: block;
-      background:$f-red;
+      background:$bg-grey;
       padding: 20px 0; 
       margin-bottom: 15px;
       &:before{
         text-align: center;
         font-size: 40px;
-        color: $white;
+        color: $f-red;
       }
     }
     &:hover{
       text-decoration: none;
+    }
+  }
+}
+
+
+.inner-banner{
+  height: 283px;
+  display: flex;
+  h1{
+    font-size: 3.5625rem;
+    margin-top: auto;
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin-left: 7.472270869819031%;
+    @media (max-width:767px) {
+      font-size: 2.5625rem;
+    }
+  }
+  &.banner-navigator{
+    background: url(../images/navigator-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    h1{
+      color: $white;
+    }
+  }
+  &.banner-dksh-apps{
+    background: url(../images/dksh-apps.jpg);
+    background-size: cover;
+    background-position: center;
+    h1{
+      color: $white;
+    }
+  }
+}
+
+.inner-content-wrap{
+  margin-top: 30px;
+  .cont-container{
+    margin: auto;
+    @media (min-width:1025px){
+      max-width: 80%;
+    }
+    @media (min-width:768px){
+      .mb{
+        margin-bottom: 1.875rem;
+      }
+    }
+    @media (max-width:768px){
+      .m-mb{
+        margin-bottom: 1.875rem;
+      }
+    }
+    .navigator-style{
+      .nav-cover{
+        background: $bg-grey;
+        padding: 1.875rem;
+        padding-left: 120px;
+        position: relative;
+        display: block;
+        height: 100%;
+        .btn-fav{
+          position: absolute;
+          right: 20px;
+          top: 20px;
+          z-index: 10;
+          &::before{
+            color:lighten($f-t-grey, 10);
+            @extend .anim-eas-in;
+          }
+          &.active{
+            &::before{
+              color: $f-red;
+            }
+          }
+        }
+        @extend .anim-eas-in;
+        top: 0;
+        span{
+          &[class^="icon-"], &[class*="icon-"] {
+            position: absolute;
+            left: 5px;
+            width: 112px;
+            text-align: center;
+            padding: 15px;
+            top: 50%;
+            margin-top: -50px;
+            display: inline-block;
+            height: 112px;
+            &::before{
+              font-size: 49px;
+              color: $f-red;
+            }
+          }
+          &[class^="ico-"], &[class*="ico-"] {
+            position: absolute;
+            text-align: center;
+            padding: 15px;
+            left: 15px;
+            bottom: 15px;
+            top: 15px;
+            display: flex;
+            width: 90px;
+            background: $white;
+            &::before{
+              font-size: 24px;
+              color: $f-red;
+              font-weight: bold;
+              margin: auto;
+            }
+            &.ico-CG{
+              &::before{
+                content: "CG";
+              }
+            }
+            &.ico-HC{
+              &::before{
+                content: "HEC";
+              }
+            }
+            &.ico-PM{
+              &::before{
+                content: "PM";
+              }
+            }
+            &.ico-TEC{
+              &::before{
+                content: "TEC";
+              }
+            }
+            &.ico-GRC{
+              &::before{
+                content: "GRC";
+              }
+            }
+          }
+
+       
+        }
+        .title{
+          font-size: 1.25rem;
+          margin-bottom:0.625rem;
+          font-weight: bold;
+          color: $f-grey;
+        }
+        p{
+          font-size: 0.875rem;
+          margin-bottom: 0;
+        }
+        @media (min-width:768px){
+          &:hover{
+            top: -3px;
+            box-shadow: 0px 6px 12px lighten($f-grey, 60);
+          }
+        }
+      }
+      .card{
+        .vertically{
+          .nav-cover{
+            cursor: pointer;
+            padding-left: 1.875rem;
+            span{
+              position: inherit;
+              padding: 0;
+              position: initial;
+              top: initial;
+              left: initial;
+              width: initial;
+              margin-top: 0;
+              height: initial;
+              margin-bottom: 20px;
+              &.icon-sap:before {
+                font-size: 71px;
+              }
+              &.icon-E-recruitment:before {
+                font-size: 60px;
+              }
+              &.icon-microsoft-teams:before {
+                font-size: 55px!important;
+              }
+              &.icon-microsoft-teams:before {
+                font-size: 55px!important;
+              }
+              &.icon-euromonitor-passport:before{
+                font-size: 55px!important;
+              }
+              &.icon-salesforce:before {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.my-fav{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  @extend .anim-eas-in;
+  .instruction{
+    padding: 20px;
+    border: 1px dashed lighten( $f-t-grey, 20);
+    display: block;
+    margin: 0 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-cover{
+    position: relative;
+    cursor: pointer;
+    small{
+      display: block;
+      width: 6px;
+      background:lighten( $f-t-grey, 20);
+      height: 6px;
+      position: absolute;
+      right: 20px;
+      top: 34px;
+      border-radius: 50%;
+      
+      &:before, &:after{
+        position: absolute;
+        display: block;
+        content: "";
+        @extend small;
+        right: 0;
+      }
+      &:before{
+        top: 9px;
+      }
+      &:after{
+        top: -9px;
+      }
+      
+    }
+    b{
+      background: #fff;
+      position: absolute;
+      right: 16px;
+      top: -20px;
+      box-shadow:0px 5px 33px rgba(0,0,0,.1);
+      padding: 13px;
+      display: none;
+      font-size: 14px;
+      color:$f-t-grey;
+      font-weight: normal;
+      &:before{
+        color: lighten( $f-t-grey, 20);
+        margin-right: 5px;
+      }
+      &:after{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 0 5px 9px;;
+        border-color: transparent transparent transparent #ffffff;
+        content: "";
+        position: absolute;
+        right: -5px;
+        top: 50%;
+        margin-top: -5px;
+      }
+    }
+    .more.open{
+      b{
+        display: block;
+      }
+    }
+    background: $white;
+    display: block;
+    padding: 1.875rem;
+    p{
+      font-size: 0.875rem;
+    }
+    span{
+      &::before{
+        font-size: 49px;
+        color: $f-red;
+        margin-bottom: 20px;
+        display: inline-block;
+      }
+    }
+    .title{
+      font-size: 1.25rem;
+      color: $f-grey;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.widget-bx{
+  background: $white;
+  padding: 30px;
+}
+
+.news-widget{
+  margin-bottom: 50px;
+  .article-wrap{
+    display: flex;
+    flex-direction: row;
+    margin: 0 -30px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after{
+      content: "";
+      background:lighten($f-grey, 65);
+      height: 1px;
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      bottom: -15px;
+    }
+    .art-img-wrap{
+      padding: 0 0 0 30px; 
+      .img{
+        width: 115px;
+        height: 115px;
+        img{
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width:1024px) {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    .art-txt{
+      padding: 0 30px;
+      .heading-3{
+        @extend .anim-eas-in;
+      }
+      .spec{
+        font-size: 15px;
+      }
+    }
+  
+    &:last-child{
+      margin-bottom: 0;
+      &::after{
+        display: none;
+      }
+    }
+    &:hover{
+      .heading-3{
+        color: $f-red;
+      }
+    }
+  }
+}
+
+.tags{
+  margin-bottom: 50px;
+  a{
+    display: inline-block;
+    border: 1px solid lighten($f-grey, 65);
+    font-size: 16px;
+    padding: 15px 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: $f-grey;
+    @extend .anim-eas-in;
+    &:hover{
+      border-color: $f-red;
     }
   }
 }

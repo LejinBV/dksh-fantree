@@ -5,9 +5,20 @@ $black: #000;
 $white: #fff;
 $bg-grey: #FAF8F7;
 
+h*{
+  color: $f-grey;
+}
+p{
+  font-size: 22px;
+  color:$f-t-grey ;
+}
 
 $menu-border: lighten($f-grey, 65);
-
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
 
 .ul-reset{
   margin: 0;
@@ -47,3 +58,8 @@ $menu-border: lighten($f-grey, 65);
 		}
 	}
 }
+
+.custom-select{
+	border-radius: 0;
+}
+

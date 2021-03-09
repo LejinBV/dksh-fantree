@@ -1,3 +1,16 @@
+h* {
+  color: #404040;
+}
+
+p {
+  font-size: 22px;
+  color: #969698;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .ul-reset {
   margin: 0;
   padding: 0;
@@ -35,6 +48,10 @@
   width: 80%;
   margin-left: -40%;
   position: absolute;
+}
+
+.custom-select {
+  border-radius: 0;
 }
 
 .gallery-item-filter {
