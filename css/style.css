@@ -23,7 +23,7 @@ a:hover {
   padding: 0;
 }
 
-.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .my-fav, .news-widget .article-wrap .art-txt .heading-3, .tags a {
+.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -382,9 +382,9 @@ img {
 }
 
 .btn.btn-tertiary:hover {
-  background: #AB1032;
-  color: #fff;
-  border: 2px solid #7c0c24;
+  background: #fff;
+  color: #7c0c24;
+  border: 2px solid #940e2b;
 }
 
 .accordion.ft-acc-style-white {
@@ -1341,6 +1341,14 @@ img {
   font-size: 1.25rem;
   color: #404040;
   font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .my-fav .nav-cover:hover {
+    top: -3px;
+    -webkit-box-shadow: 0px 6px 12px #d9d9d9;
+            box-shadow: 0px 6px 12px #d9d9d9;
+  }
 }
 
 .widget-bx {
