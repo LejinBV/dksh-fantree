@@ -824,6 +824,7 @@ img{
   .nav-cover{
     position: relative;
     cursor: pointer;
+    top: 0;
     @extend .anim-eas-in;
     small{
       display: block;
