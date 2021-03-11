@@ -7,6 +7,10 @@ p {
   color: #969698;
 }
 
+a {
+  color: #AB1032;
+}
+
 a:hover {
   text-decoration: none;
 }
