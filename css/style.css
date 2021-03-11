@@ -1263,6 +1263,7 @@ img {
 .my-fav .nav-cover {
   position: relative;
   cursor: pointer;
+  top: 0;
   background: #fff;
   display: block;
   padding: 1.875rem;
