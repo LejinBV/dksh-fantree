@@ -24,15 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
-
-
+.icon-location:before {
+  content: "\e938";
+}
+.icon-global:before {
+  content: "\e937";
+}
+.icon-global:before {
+  content: "\e937";
+}
+.icon-location:before {
+  content: "\e938";
+}
+.icon-download-pdf:before {
+  content: "\e936";
+}
 .icon-delete:before {
   content: "\e934";
 }
 .icon-fav:before {
   content: "\e935";
 }
-
 .icon-sap:before {
   content: "\e933";
 }
@@ -195,7 +207,7 @@
 .icon-hr-zone:before {
   content: "\eaef";
 }
-.icon-IT-help-desk:before {
+.icon-it-desk:before {
   content: "\eaf0";
 }
 .icon-leave:before {

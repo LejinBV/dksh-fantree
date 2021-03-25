@@ -706,6 +706,11 @@ img{
               font-size: 49px;
               color: $f-red;
             }
+            &.icon-location,  &.icon-global{
+              &:before{
+                font-size: 67px !important;
+              }
+            }
           }
           &[class^="ico-"], &[class*="ico-"] {
             position: absolute;
@@ -768,6 +773,20 @@ img{
             box-shadow: 0px 6px 12px lighten($f-grey, 60);
           }
         }
+        label{
+          background: $white;
+          border: 1px solid #fff;
+          font-size: 12px;
+          padding: 5px 15px;
+          color: $f-t-grey;
+          margin-bottom: 0;
+          position: absolute;
+          left: 5px;
+          top: -5px;
+          left: 16px;
+          top: -16px;
+          box-shadow: 0px 0px 9px -2px rgba(0, 0, 0,.1);
+        }
       }
       .card{
         .vertically{
@@ -799,6 +818,8 @@ img{
               &.icon-euromonitor-passport:before{
                 font-size: 55px!important;
               }
+              
+              
               &.icon-salesforce:before {
                 font-weight: bold;
               }
@@ -992,3 +1013,5 @@ img{
     }
   }
 }
+
+

@@ -80,6 +80,26 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e938";
+}
+
+.icon-global:before {
+  content: "\e937";
+}
+
+.icon-global:before {
+  content: "\e937";
+}
+
+.icon-location:before {
+  content: "\e938";
+}
+
+.icon-download-pdf:before {
+  content: "\e936";
+}
+
 .icon-delete:before {
   content: "\e934";
 }
@@ -304,7 +324,7 @@ a:hover {
   content: "\eaef";
 }
 
-.icon-IT-help-desk:before {
+.icon-it-desk:before {
   content: "\eaf0";
 }
 
@@ -1134,6 +1154,10 @@ img {
   color: #AB1032;
 }
 
+.inner-content-wrap .cont-container .navigator-style .nav-cover span[class^="icon-"].icon-location:before, .inner-content-wrap .cont-container .navigator-style .nav-cover span[class^="icon-"].icon-global:before, .inner-content-wrap .cont-container .navigator-style .nav-cover span[class*="icon-"].icon-location:before, .inner-content-wrap .cont-container .navigator-style .nav-cover span[class*="icon-"].icon-global:before {
+  font-size: 67px !important;
+}
+
 .inner-content-wrap .cont-container .navigator-style .nav-cover span[class^="ico-"], .inner-content-wrap .cont-container .navigator-style .nav-cover span[class*="ico-"] {
   position: absolute;
   text-align: center;
@@ -1193,6 +1217,22 @@ img {
     -webkit-box-shadow: 0px 6px 12px #d9d9d9;
             box-shadow: 0px 6px 12px #d9d9d9;
   }
+}
+
+.inner-content-wrap .cont-container .navigator-style .nav-cover label {
+  background: #fff;
+  border: 1px solid #fff;
+  font-size: 12px;
+  padding: 5px 15px;
+  color: #969698;
+  margin-bottom: 0;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  left: 16px;
+  top: -16px;
+  -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.1);
 }
 
 .inner-content-wrap .cont-container .navigator-style .card .vertically .nav-cover {
