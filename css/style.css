@@ -972,6 +972,16 @@ img {
   margin-left: 15px;
 }
 
+.shell .article-list {
+  padding-top: 50px;
+}
+
+@media (max-width: 1023px) {
+  .shell .article-list {
+    padding-top: 35px;
+  }
+}
+
 .shell .article-list .mob-filter {
   margin-bottom: 30px;
 }
