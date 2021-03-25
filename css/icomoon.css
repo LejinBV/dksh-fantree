@@ -20,6 +20,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-location:before {
+  content: "\e938";
+}
+
+.icon-global:before {
+  content: "\e937";
+}
+
+.icon-global:before {
+  content: "\e937";
+}
+
+.icon-location:before {
+  content: "\e938";
+}
+
+.icon-download-pdf:before {
+  content: "\e936";
+}
+
 .icon-delete:before {
   content: "\e934";
 }
@@ -244,7 +264,7 @@
   content: "\eaef";
 }
 
-.icon-IT-help-desk:before {
+.icon-it-desk:before {
   content: "\eaf0";
 }
 
