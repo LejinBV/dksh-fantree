@@ -16,7 +16,8 @@ p{
 $menu-border: lighten($f-grey, 65);
 a{
 	color: $f-red;
-  &:hover{
+	&:hover{
+	color: $f-red;
     text-decoration: none;
   }
 }

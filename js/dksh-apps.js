@@ -16,4 +16,20 @@ $(document).ready(function () {
   $('body').on('click', '.icon-delete',function(){
     $(this).closest('.wrap').remove();
   })
+
+
+
 });
+
+function exapandAcc() {
+  $(".acco-closed").toggleClass('collaspe-po');
+  var x = document.getElementById("expand");
+  if (x.innerHTML === "Expand all") {
+    x.innerHTML = "Collapse all";
+    
+  } else {
+    x.innerHTML = "Expand all";
+  }
+}
+
+
