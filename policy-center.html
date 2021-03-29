@@ -227,8 +227,49 @@
         <div class="row">
           <div class="col-xl-9 col-lg-12">
             <div class="cont-container">
-              <p>Find the Global and local policies that you need in our Policy center. To easily find what you're
-                looking for, filter by area on the right-hand side of the page. </p>
+              <p>Find the Global and local policies that you need in our Policy center. To easily find what you're looking for, filter by area on the right-hand side of the page. </p>
+
+              <section class="widget-option">
+                <a href="#policyFilter" class="po-filter" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="policyFilter"><i class="icon-equalizer"></i>Filters</a>
+                
+                <a class="acco-closed" id="navigationAccordion" onclick="exapandAcc()"  href="#"><small id="expand" data-toggle="collapse" data-target="#policyOne, #policyTwo">Expand all</small> 
+                  <span><i class="icon-arrow-bottom"></i><i class="icon-arrow-bottom top"></i></span>
+                </a>
+                
+                <div class="collapse policy-filter-opt" id="policyFilter">
+                  <div class="card card-body">
+                    <p><b>Policy Owner</b></p>
+                    <form action="">
+                      <label for="all"><input name="policyOwner" id="all" type="radio" checked><span></span>All</label>
+                      <label for="humaResources"><input name="policyOwner" id="humaResources" type="radio"><span></span>Human Resource</label>
+                      <label for="co-comm"><input id="co-comm" name="policyOwner" type="radio"><span></span>Corporate communications</label>
+                      <label for="groupMarketing"><input id="groupMarketing" name="groupMarketing" type="radio"><span></span>Group Marketing</label>
+                      <label for="IT"><input id="IT" name="policyOwner" type="radio"><span></span>IT</label>
+                      <label for="finance"><input id="finance" name="policyOwner" type="radio"><span></span>Finance</label>
+                      <label for="legal"><input id="legal" name="policyOwner" type="radio"><span></span>Legal</label>
+                      <label for="grc"><input id="grc" name="policyOwner" type="radio"><span></span>Governance Risk Compliance</label>
+                      <label for="supplyChainMgmt"><input id="supplyChainMgmt" name="policyOwner" type="radio"><span></span>Supply Chain Management</label>
+                    </form>
+                    <hr>
+                    <p><b>Filter by</b></p>
+                    <form action="">
+                      <label for="allfilter"><input name="filterBy" id="allfilter" checked type="radio"><span></span>All</label>
+                      <label for="bu"><input name="filterBy" id="bu" type="radio"><span></span>My Business Unit</label>
+                      <label for="function"><input name="filterBy" id="function" type="radio"><span></span>My Function</label>
+                      <label for="country"><input name="filterBy" id="country" type="radio"><span></span>My Country</label>
+                      
+                    </form>
+                  </div>
+                </div>
+              </section>
+
+
+             
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
 
               <div class="accordion ft-acc-style-white navigator-style" id="navigationAccordion">
                 <div class="card">
@@ -240,8 +281,7 @@
                     </h3>
                   </div>
 
-                  <div id="policyOne" class="collapse in card-body" aria-labelledby="policy-header"
-                    data-parent="#navigationAccordion">
+                  <div id="policyOne" class="collapse in card-body" aria-labelledby="policy-header" data-parent="#navigationAccordion">
                     <div class="inner">
                       <div class="row ">
 
@@ -310,8 +350,7 @@
                     </h3>
                   </div>
 
-                  <div id="policyTwo" class="collapse in card-body" aria-labelledby="policy-header"
-                    data-parent="#navigationAccordion">
+                  <div id="policyTwo" class="collapse in card-body" aria-labelledby="policy-header" data-parent="#navigationAccordion">
                     <div class="inner">
                       <div class="row ">
 
@@ -460,6 +499,8 @@
   <script>
     // menu-open script starts
 
+    
+
     function myFunction(x) {
 
       $('.main').on('click', function () {
@@ -482,6 +523,7 @@
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction) // Attach listener function on state changes
 
+ 
   </script>
 
 

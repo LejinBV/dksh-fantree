@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
+
+.icon-equalizer:before {
+  content: "\e939";
+}
 .icon-location:before {
   content: "\e938";
 }

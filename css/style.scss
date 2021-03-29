@@ -1014,4 +1014,124 @@ img{
   }
 }
 
-
+.widget-option{
+  margin-bottom: 20px;
+  margin-top: 25px;
+  position: relative;
+  select{
+    border: 1px solid lighten($f-grey, 65);
+    padding: 15px;
+  }
+  .po-filter{
+    background: $white;
+    padding: 15px 20px;
+    display: inline-block;
+    color: $f-t-grey;
+    margin-right: 15px;
+    i{
+      margin-right: 10px;
+      color: $f-red;
+    }
+  }
+  .policy-filter-opt{
+    z-index: 10;
+    border: none 0;
+    border-radius: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 13px 31px -6px rgba(0, 0, 0, .1);
+    position: absolute;
+    .card{
+      border: 0 none;
+    }
+    label{
+      display: inline-block;
+      margin-right: 15px;
+      cursor: pointer;
+      span{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+        border: 1px solid $f-t-grey;
+        margin-top: -3px;
+        &:after{
+          @extend .anim-eas-in;
+          width: 10px;
+          height: 10px;
+          background: $f-red;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 4px;
+          opacity: 0;
+          content: "";
+        }
+      }
+      input[type="radio"]{
+        margin-right: 10px;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      input:checked ~ span:after{
+        opacity: 1;
+      }
+    }
+  }
+  .acco-closed{
+    position: relative;
+    display: inline-block;
+    color: $f-t-grey;
+    background: $white;
+    padding: 15px 20px 15px 40px;
+    
+    @extend .anim-eas-in;
+    small{
+      font-size: initial;
+      line-height: 1;
+      @extend .anim-eas-in;
+    }
+    span{
+      width: 1px;
+      height: 12px;
+      position: absolute;
+      background: $f-red;
+      display: inline-block;
+      left: 20px;
+      top: 20px;
+      i{
+       &::before{
+        @extend .anim-eas-in;
+         font-size: 7px;
+         position: absolute;
+         right: -3px;
+         color:$f-red;
+         bottom: -5px;
+       }
+       &.top{
+         &:before{
+           transform: rotate(180deg);
+           top: -4px;
+           bottom: inherit;
+         }
+       }
+      }
+    }
+    &.collaspe-po{
+      span{
+        i:before{
+          transform: rotate(180deg);
+          bottom: 1px;
+        }
+        i.top:before{
+          transform: rotate(0deg);
+          top: 1px;
+          bottom: inherit;
+        }
+      }
+    }
+  }
+}

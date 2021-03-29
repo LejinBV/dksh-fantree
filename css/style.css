@@ -12,6 +12,7 @@ a {
 }
 
 a:hover {
+  color: #AB1032;
   text-decoration: none;
 }
 
@@ -27,7 +28,7 @@ a:hover {
   padding: 0;
 }
 
-.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a {
+.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -78,6 +79,10 @@ a:hover {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-equalizer:before {
+  content: "\e939";
 }
 
 .icon-location:before {
@@ -1489,5 +1494,135 @@ img {
 
 .tags a:hover {
   border-color: #AB1032;
+}
+
+.widget-option {
+  margin-bottom: 20px;
+  margin-top: 25px;
+  position: relative;
+}
+
+.widget-option select {
+  border: 1px solid #e6e6e6;
+  padding: 15px;
+}
+
+.widget-option .po-filter {
+  background: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  color: #969698;
+  margin-right: 15px;
+}
+
+.widget-option .po-filter i {
+  margin-right: 10px;
+  color: #AB1032;
+}
+
+.widget-option .policy-filter-opt {
+  z-index: 10;
+  border: none 0;
+  border-radius: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 13px 31px -6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 13px 31px -6px rgba(0, 0, 0, 0.1);
+  position: absolute;
+}
+
+.widget-option .policy-filter-opt .card {
+  border: 0 none;
+}
+
+.widget-option .policy-filter-opt label {
+  display: inline-block;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.widget-option .policy-filter-opt label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  border: 1px solid #969698;
+  margin-top: -3px;
+}
+
+.widget-option .policy-filter-opt label span:after {
+  width: 10px;
+  height: 10px;
+  background: #AB1032;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 4px;
+  opacity: 0;
+  content: "";
+}
+
+.widget-option .policy-filter-opt label input[type="radio"] {
+  margin-right: 10px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.widget-option .policy-filter-opt label input:checked ~ span:after {
+  opacity: 1;
+}
+
+.widget-option .acco-closed {
+  position: relative;
+  display: inline-block;
+  color: #969698;
+  background: #fff;
+  padding: 15px 20px 15px 40px;
+}
+
+.widget-option .acco-closed small, .widget-option .acco-closed .accordion.ft-acc-style-white .card-header .acc-title small:after, .accordion.ft-acc-style-white .card-header .acc-title .widget-option .acco-closed small:after, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after {
+  font-size: initial;
+  line-height: 1;
+}
+
+.widget-option .acco-closed span {
+  width: 1px;
+  height: 12px;
+  position: absolute;
+  background: #AB1032;
+  display: inline-block;
+  left: 20px;
+  top: 20px;
+}
+
+.widget-option .acco-closed span i::before {
+  font-size: 7px;
+  position: absolute;
+  right: -3px;
+  color: #AB1032;
+  bottom: -5px;
+}
+
+.widget-option .acco-closed span i.top:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: -4px;
+  bottom: inherit;
+}
+
+.widget-option .acco-closed.collaspe-po span i:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: 1px;
+}
+
+.widget-option .acco-closed.collaspe-po span i.top:before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  top: 1px;
+  bottom: inherit;
 }
 /*# sourceMappingURL=style.css.map */
