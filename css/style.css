@@ -1102,7 +1102,7 @@ img {
 }
 
 .inner-content-wrap {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .inner-content-wrap .cont-container {
@@ -1111,7 +1111,8 @@ img {
 
 @media (min-width: 1025px) {
   .inner-content-wrap .cont-container {
-    max-width: 80%;
+    max-width: 1021px;
+    width: 100%;
   }
 }
 
@@ -1435,11 +1436,12 @@ img {
 
 .news-widget .article-wrap .art-img-wrap {
   padding: 0 0 0 30px;
+  max-width: 120px;
 }
 
 .news-widget .article-wrap .art-img-wrap .img {
-  width: 115px;
-  height: 115px;
+  width: 100%;
+  height: 100%;
 }
 
 .news-widget .article-wrap .art-img-wrap .img img {
