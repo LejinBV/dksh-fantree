@@ -28,7 +28,7 @@ a:hover {
   padding: 0;
 }
 
-.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before {
+.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before, .related-artc .reltd-art-item {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -1105,6 +1105,10 @@ img {
   margin-top: 60px;
 }
 
+.inner-content-wrap.without-banner {
+  margin-top: 0;
+}
+
 .inner-content-wrap .cont-container {
   margin: auto;
 }
@@ -1627,5 +1631,62 @@ img {
           transform: rotate(0deg);
   top: 1px;
   bottom: inherit;
+}
+
+.art-dt-wrap {
+  background: #fff;
+  margin-bottom: 3.125rem;
+}
+
+.art-dt-wrap .cont-container {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.art-dt-wrap .artc-date {
+  clear: both;
+  margin-bottom: 1.563rem;
+  color: #AB1032;
+}
+
+.art-dt-wrap img {
+  margin-bottom: 1.563rem;
+}
+
+.related-artc [class*="col-"] {
+  margin-bottom: 3.125rem;
+}
+
+.related-artc .reltd-art-item {
+  height: 100%;
+  padding: 3.125rem;
+  background: #fff;
+}
+
+.related-artc .reltd-art-item .ico-more {
+  border-radius: 50%;
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #AB1032;
+  border: 2px solid #AB1032;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+
+.related-artc .reltd-art-item .ico-more:before {
+  position: absolute;
+  left: 11px;
+  -webkit-transform: rotate(273deg);
+          transform: rotate(273deg);
+  top: 10px;
+}
+
+.related-artc .reltd-art-item:hover {
+  -webkit-box-shadow: 0px 6px 12px #d9d9d9;
+          box-shadow: 0px 6px 12px #d9d9d9;
+  text-decoration: none;
+  margin-top: -5px;
 }
 /*# sourceMappingURL=style.css.map */
