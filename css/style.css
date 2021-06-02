@@ -1111,7 +1111,7 @@ img {
 
 @media (min-width: 1025px) {
   .inner-content-wrap .cont-container {
-    max-width: 1021px;
+    max-width: 1020px;
     width: 100%;
   }
 }
@@ -1437,6 +1437,7 @@ img {
 .news-widget .article-wrap .art-img-wrap {
   padding: 0 0 0 30px;
   max-width: 120px;
+  border: none 0;
 }
 
 .news-widget .article-wrap .art-img-wrap .img {
