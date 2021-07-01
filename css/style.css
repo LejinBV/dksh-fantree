@@ -28,7 +28,7 @@ a:hover {
   padding: 0;
 }
 
-.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .nav ul li .menu .accordion .card .market-list li a, .shell .nav ul li .menu .accordion .card .market-list li a i, .shell .nav ul li .menu .accordion .card .market-list li a span, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a i, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a span, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before, .related-artc .reltd-art-item {
+.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .nav ul li .menu .accordion .card .market-list li a, .shell .nav ul li .menu .accordion .card .market-list li a i, .shell .nav ul li .menu .accordion .card .market-list li a span, .shell .content-wrap .f-banner .carousel .carousel-inner .carousel-item .overlay, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a i, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a span, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before, .related-artc .reltd-art-item {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -926,6 +926,36 @@ img {
 .shell .content-wrap .f-banner .row [class^="col-"], .shell .content-wrap .f-banner .row [class*=" col-"] {
   margin: 0;
   padding: 0;
+}
+
+.shell .content-wrap .f-banner .carousel .carousel-inner .carousel-item .overlay {
+  position: absolute;
+  bottom: -20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  opacity: 0.9;
+  color: white;
+  font-size: 15px;
+  padding: 5px 20px;
+  height: 60px;
+  overflow: hidden;
+  padding-right: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+.shell .content-wrap .f-banner .carousel .carousel-inner .carousel-item .overlay .overlay-inner {
+  margin: auto 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.shell .content-wrap .f-banner .carousel:hover .carousel-inner .carousel-item .overlay {
+  opacity: 1;
+  bottom: 0;
 }
 
 .shell .content-wrap .f-banner .controller-wrap {
