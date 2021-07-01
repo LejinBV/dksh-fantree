@@ -505,6 +505,44 @@ img{
         }
       }
       height: 100%;
+      .carousel{
+        .carousel-inner{
+          .carousel-item{
+            .overlay{
+              position: absolute;
+              bottom: -20px;
+              background: rgba(0, 0, 0, 0.5);
+              color: #f1f1f1;
+              width: 100%;
+              opacity: 0.9;
+              color: white;
+              font-size: 15px;
+              padding:5px 20px;
+              height: 60px;
+              overflow: hidden;
+              padding-right: 150px;
+              display: flex;
+              opacity: 0;
+              @extend .anim-eas-in;
+              .overlay-inner{
+                margin: auto 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+        &:hover{
+          .carousel-inner{
+            .carousel-item{
+              .overlay{
+                opacity: 1;
+                bottom: 0;
+              }
+            }
+          }
+        }
+      }
       .controller-wrap{
         position: absolute;
         right: 0;
