@@ -927,9 +927,11 @@ img{
           .market-list{
             margin: 0;
             padding: 0;
+            margin-bottom: -20px;
             li{
               display: inline-block;
               margin-right: 20px;
+              margin-bottom: 20px;
               a{
                 display: inline-block;
                 vertical-align: middle;
