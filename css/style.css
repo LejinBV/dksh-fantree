@@ -1390,11 +1390,13 @@ img {
 .inner-content-wrap .cont-container .navigator-style .card .inner .market-list {
   margin: 0;
   padding: 0;
+  margin-bottom: -20px;
 }
 
 .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li {
   display: inline-block;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a {
