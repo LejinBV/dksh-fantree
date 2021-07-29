@@ -1102,7 +1102,6 @@ img {
   left: 0;
   top: 5px;
   font-size: 42px;
-  white-space: nowrap;
 }
 
 .shell .content-wrap .profile .leav-wrap p {
@@ -1119,6 +1118,7 @@ img {
 }
 
 .shell .content-wrap .profile .leav-wrap p span {
+  white-space: nowrap;
   display: inline-block;
   text-align-last: left;
 }
