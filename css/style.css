@@ -1025,20 +1025,26 @@ img {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .shell .content-wrap .profile .prof-wrap {
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
+  margin-bottom: auto;
 }
 
 .shell .content-wrap .profile .prof-wrap > .prof-pic {
   border-radius: 50%;
   overflow: hidden;
-  width: 50%;
-  height: 50%;
+  width: 80px;
+  height: 80px;
   margin: auto;
   margin-bottom: 15px;
+  margin-top: 2%;
 }
 
 .shell .content-wrap .profile .prof-wrap p {
@@ -1066,6 +1072,59 @@ img {
 
 .shell .content-wrap .profile .prof-wrap .btn i {
   margin-left: 15px;
+}
+
+.shell .content-wrap .profile .leav-wrap {
+  background: #FAF8F7;
+  padding: 1.5rem  1.5rem 1rem;
+  text-align: center;
+}
+
+.shell .content-wrap .profile .leav-wrap .btn {
+  margin-top: 10px;
+  background: transparent;
+}
+
+.shell .content-wrap .profile .leav-wrap h5 {
+  position: relative;
+  font-size: 20px;
+  color: #404040;
+  padding-left: 52px;
+  padding-bottom: 17px;
+  padding-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.shell .content-wrap .profile .leav-wrap h5 span {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 42px;
+}
+
+.shell .content-wrap .profile .leav-wrap p {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shell .content-wrap .profile .leav-wrap p * {
+  font-size: 14px;
+  line-height: 1;
+  width: 49%;
+}
+
+.shell .content-wrap .profile .leav-wrap p span {
+  display: inline-block;
+  text-align-last: left;
+}
+
+.shell .content-wrap .profile .leav-wrap p small, .shell .content-wrap .profile .leav-wrap p .accordion.ft-acc-style-white .card-header .acc-title small:after, .accordion.ft-acc-style-white .card-header .acc-title .shell .content-wrap .profile .leav-wrap p small:after, .shell .content-wrap .profile .leav-wrap p .my-fav .nav-cover small:before, .my-fav .nav-cover .shell .content-wrap .profile .leav-wrap p small:before, .shell .content-wrap .profile .leav-wrap p .my-fav .nav-cover small:after, .my-fav .nav-cover .shell .content-wrap .profile .leav-wrap p small:after {
+  text-align: right;
+  display: inline-block;
 }
 
 .shell .article-list {
