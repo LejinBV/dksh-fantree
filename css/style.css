@@ -1052,11 +1052,20 @@ img {
 .shell .content-wrap .profile .prof-wrap > .prof-pic {
   border-radius: 50%;
   overflow: hidden;
-  width: 70px;
-  height: 70px;
+  width: 6vw;
+  height: 6vw;
   margin-bottom: 15px;
   margin-top: 2%;
   margin-right: 15px;
+}
+
+.shell .content-wrap .profile .prof-wrap > .prof-pic img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .shell .content-wrap .profile .prof-wrap .prof-dc {
@@ -1152,7 +1161,7 @@ img {
 }
 
 .shell .content-wrap .profile .leav-wrap p b {
-  border: 2px solid #d3c1b8;
+  border: 2px solid #f0eae7;
   color: #AB1032;
   text-align: center;
   display: inline-block;

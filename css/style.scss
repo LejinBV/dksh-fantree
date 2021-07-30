@@ -619,15 +619,24 @@ img{
         >.prof-pic{
           border-radius: 50%;
           overflow: hidden;
-          width: 70px;
-          height: 70px;
+          width: 6vw;
+          height: 6vw;
           margin-bottom: 15px;
           margin-top: 2%;
           margin-right: 15px;
+          img{
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+          }
         }
         .prof-dc{
           text-align: left;
           margin: auto 0;
+          
           p{
             margin-bottom: 5px;
           }
@@ -701,7 +710,7 @@ img{
             display: inline-block;
           }
           b{
-            border: 2px solid darken($bg-grey, 20%);
+            border: 2px solid darken($bg-grey, 5%);
             color: $f-red;
             text-align: center;
             display: inline-block;
