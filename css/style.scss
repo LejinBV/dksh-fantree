@@ -204,10 +204,11 @@ img{
     bottom: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    background:  $white;
+    background:  $bg-grey;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     border-right: 1px solid $menu-border;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .1);
     @extend .anim-eas-in;
     &::-webkit-scrollbar {
       display: none;
@@ -240,7 +241,7 @@ img{
             width: 100%;
             @extend .anim-eas-in;
             &::before{
-              font-size: 40px;
+              font-size: 30px;
               @media (max-width:1023px) {
                 font-size: 26px;
               }
@@ -447,6 +448,28 @@ img{
         }
         @media (max-width:767px) {
           
+        }
+        &:first-child, &:nth-child(2){
+          position: fixed;
+          background: $white;
+          left: 0;
+          top: 50px;
+          width: 133px;
+          z-index: 100;
+          >a{
+            i{
+              &::before{
+                font-size: 40px;
+              }
+            }
+          }
+        }
+        &:nth-child(2){
+          top: 184px;
+          box-shadow: -2px 3px 6px rgba(0, 0, 0, .2);
+        }
+        &:nth-child(3){
+          margin-top: 245px;
         }
         
       }
