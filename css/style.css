@@ -1,3 +1,33 @@
+.art-dt-wrap .cont-container, .latest-news-wrap, .section-wi, .section-calendar, .f-gallery {
+  margin-top: 6.1rem;
+}
+
+@media (max-width: 767px) {
+  .art-dt-wrap .cont-container, .latest-news-wrap, .section-wi, .section-calendar, .f-gallery {
+    margin-top: 3rem;
+  }
+}
+
+.related-artc .reltd-art-item, .latest-news-wrap .nws-article .nws-a-wrap, .section-wi .box-wi, .section-calendar .calendar-box {
+  padding: 3.125rem;
+}
+
+@media (max-width: 767px) {
+  .related-artc .reltd-art-item, .latest-news-wrap .nws-article .nws-a-wrap, .section-wi .box-wi, .section-calendar .calendar-box {
+    padding: 1.625rem;
+  }
+}
+
+.art-dt-wrap, .related-artc [class*="col-"] {
+  margin-bottom: 3.125rem;
+}
+
+@media (max-width: 767px) {
+  .art-dt-wrap, .related-artc [class*="col-"] {
+    margin-bottom: 1.6rem;
+  }
+}
+
 h* {
   color: #404040;
 }
@@ -16,6 +46,18 @@ a:hover {
   text-decoration: none;
 }
 
+.box-shadow, .section-wi .box-wi:hover {
+  -webkit-box-shadow: 0px 6px 12px #d9d9d9;
+          box-shadow: 0px 6px 12px #d9d9d9;
+}
+
+.viewAll {
+  font-size: 16px;
+  color: #AB1032;
+  text-decoration: none;
+  font-weight: normal;
+}
+
 .ul-reset, .shell .nav ul {
   margin: 0;
   padding: 0;
@@ -28,7 +70,7 @@ a:hover {
   padding: 0;
 }
 
-.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .nav ul li .menu .accordion .card .market-list li a, .shell .nav ul li .menu .accordion .card .market-list li a i, .shell .nav ul li .menu .accordion .card .market-list li a span, .shell .content-wrap .f-banner .carousel .carousel-inner .carousel-item .overlay, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a i, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a span, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before, .related-artc .reltd-art-item {
+.anim-eas-in, .line-hover:after, .shell .nav ul li > a:after, .accordion.ft-acc-style-white .card-header .acc-title small:after, .hamberger button.navbar-toggler small, .hamberger button.navbar-toggler .my-fav .nav-cover small:before, .my-fav .nav-cover .hamberger button.navbar-toggler small:before, .hamberger button.navbar-toggler .my-fav .nav-cover small:after, .my-fav .nav-cover .hamberger button.navbar-toggler small:after, .hamberger button.navbar-toggler i, .shell .nav, .shell .nav ul li > a i, .shell .nav ul li .menu, .shell .nav ul li .menu .accordion .card .card-header a::before, .shell .nav ul li .menu .accordion .card .menu-inner a:before, .shell .nav ul li .menu .accordion .card .market-list li a, .shell .nav ul li .menu .accordion .card .market-list li a i, .shell .nav ul li .menu .accordion .card .market-list li a span, .shell .content-wrap .f-banner .carousel .carousel-inner .carousel-item .overlay, .shell .article-list a, .inner-content-wrap .cont-container .navigator-style .nav-cover .btn-fav::before, .inner-content-wrap .cont-container .navigator-style .nav-cover, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a i, .inner-content-wrap .cont-container .navigator-style .card .inner .market-list li a span, .my-fav, .my-fav .nav-cover, .news-widget .article-wrap .art-txt .heading-3, .tags a, .widget-option .policy-filter-opt label span:after, .widget-option .acco-closed, .widget-option .acco-closed small, .widget-option .acco-closed .my-fav .nav-cover small:before, .my-fav .nav-cover .widget-option .acco-closed small:before, .widget-option .acco-closed .my-fav .nav-cover small:after, .my-fav .nav-cover .widget-option .acco-closed small:after, .widget-option .acco-closed span i::before, .related-artc .reltd-art-item, .section-wi .box-wi, .section-calendar .calendar-box .cal-col {
   transition: all 500ms ease;
   -webkit-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -57,6 +99,25 @@ a:hover {
 
 .custom-select {
   border-radius: 0;
+}
+
+.ico-more {
+  border-radius: 50%;
+  width: 40px;
+  text-align: center;
+  color: #AB1032;
+  border: 2px solid #AB1032;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+
+.ico-more:before {
+  position: absolute;
+  left: 11px;
+  -webkit-transform: rotate(273deg);
+          transform: rotate(273deg);
+  top: 10px;
 }
 
 @font-face {
@@ -1374,6 +1435,16 @@ img {
   color: #fff;
 }
 
+.inner-banner.banner-gm {
+  background: url(../images/gm-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.inner-banner.banner-gm h1 {
+  color: #fff;
+}
+
 .inner-content-wrap {
   margin-top: 60px;
 }
@@ -1968,12 +2039,10 @@ img {
 
 .art-dt-wrap {
   background: #fff;
-  margin-bottom: 3.125rem;
 }
 
 .art-dt-wrap .cont-container {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-bottom: 3.6rem;
 }
 
 .art-dt-wrap .artc-date {
@@ -1986,13 +2055,8 @@ img {
   margin-bottom: 1.563rem;
 }
 
-.related-artc [class*="col-"] {
-  margin-bottom: 3.125rem;
-}
-
 .related-artc .reltd-art-item {
   height: 100%;
-  padding: 3.125rem;
   background: #fff;
 }
 
@@ -2020,5 +2084,127 @@ img {
           box-shadow: 0px 6px 12px #d9d9d9;
   text-decoration: none;
   margin-top: -5px;
+}
+
+.latest-news-wrap .nws-article {
+  background: #fff;
+  height: 100%;
+}
+
+.latest-news-wrap .nws-article .nws-a-wrap {
+  background: #fff;
+}
+
+.section-wi [class^="col-"], .section-wi [class*=" col-"] {
+  margin-bottom: 30px;
+}
+
+.section-wi .box-wi {
+  background: #fff;
+  padding-left: 130px;
+  position: relative;
+  height: 100%;
+  display: block;
+}
+
+.section-wi .box-wi p {
+  font-size: 1rem;
+}
+
+.section-wi .box-wi .wi-icon {
+  color: #AB1032;
+  font-size: 50px;
+  position: absolute;
+  left: 40px;
+}
+
+.section-wi .box-wi:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+@media (max-width: 767px) {
+  .section-wi .box-wi {
+    padding-left: 1.625rem;
+  }
+  .section-wi .box-wi .wi-icon {
+    position: initial;
+  }
+}
+
+.section-calendar .calendar-box {
+  background: #fff;
+}
+
+.section-calendar .calendar-box .cal-col {
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+  padding-left: 70px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.section-calendar .calendar-box .cal-col > span.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 46px;
+  color: #AB1032;
+  line-height: 1;
+}
+
+.section-calendar .calendar-box .cal-col:hover {
+  border-bottom: 1px solid #AB1032;
+}
+
+.section-calendar .calendar-box .cal-col:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .section-calendar .calendar-box .cal-col {
+    padding-left: 56px;
+  }
+  .section-calendar .calendar-box .cal-col > span.icon {
+    font-size: 39px;
+  }
+}
+
+.f-gallery .grid-item {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .f-gallery .grid-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 767px) {
+  .f-gallery .grid-item {
+    width: 50%;
+  }
+}
+
+.f-gallery .grid-item::before {
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  top: 50%;
+  margin-top: -15px;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  content: "\e927";
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 }
 /*# sourceMappingURL=style.css.map */
