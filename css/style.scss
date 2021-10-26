@@ -446,9 +446,7 @@ img{
             }
           }
         }
-        @media (max-width:767px) {
-          
-        }
+       
         &:first-child, &:nth-child(2){
           position: fixed;
           background: $white;
@@ -463,6 +461,9 @@ img{
               }
             }
           }
+          @media (max-width:992px) {
+            width: 97px;
+          }
         }
         &:nth-child(2){
           top: 184px;
@@ -470,6 +471,12 @@ img{
         }
         &:nth-child(3){
           margin-top: 245px;
+          @media (max-width:992px) {
+            margin-top: 263px;
+          }
+          @media (max-width:767px) {
+            margin-top: 223px;
+          }
         }
         
       }

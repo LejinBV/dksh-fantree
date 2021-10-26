@@ -943,6 +943,12 @@ img {
   font-size: 40px;
 }
 
+@media (max-width: 992px) {
+  .shell .nav ul li:first-child, .shell .nav ul li:nth-child(2) {
+    width: 97px;
+  }
+}
+
 .shell .nav ul li:nth-child(2) {
   top: 184px;
   -webkit-box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.2);
@@ -951,6 +957,18 @@ img {
 
 .shell .nav ul li:nth-child(3) {
   margin-top: 245px;
+}
+
+@media (max-width: 992px) {
+  .shell .nav ul li:nth-child(3) {
+    margin-top: 263px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shell .nav ul li:nth-child(3) {
+    margin-top: 223px;
+  }
 }
 
 @media (max-width: 767px) {
