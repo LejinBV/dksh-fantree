@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
+.icon-success-factor:before {
+  content: "\e93a";
+}
+.icon-integrity:before {
+  content: "\e93b";
+}
 
 .icon-equalizer:before {
   content: "\e939";
