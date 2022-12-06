@@ -235,7 +235,7 @@
                   aria-controls="policyFilter"><i class="icon-equalizer"></i>Filters</a>
 
                 <a class="acco-closed" id="navigationAccordion" onclick="exapandAcc()" href="#"><small id="expand"
-                    data-toggle="collapse" data-target="#policyOne, #policyTwo">Expand all</small>
+                    data-toggle="collapse" data-target="#policyOne, #policyTwo, #policyThree, #policyFour, #policyFive, #policySix">Expand all</small>
                   <span><i class="icon-arrow-bottom"></i><i class="icon-arrow-bottom top"></i></span>
                 </a>
 
@@ -285,11 +285,12 @@
               </div>
 
               <div class="accordion ft-acc-style-white navigator-style" id="navigationAccordion">
+
                 <div class="card">
                   <div class="card-header" id="policy-header">
                     <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policyOne"
                       aria-expanded="true" aria-controls="policyOne">
-                      Benefits and wellbeing
+                      Compliance and Risk
                       <small></small>
                     </h3>
                   </div>
@@ -297,74 +298,281 @@
                   <div id="policyOne" class="collapse in card-body" aria-labelledby="policy-header"
                     data-parent="#navigationAccordion">
                     <div class="inner">
-                        <ul class="acc-filter clearFix">
-                            <li><a href="#" class="active">All</a></li>
-                            <li><a href="#">Category 1</a></li>
-                            <li><a href="#">Category 2</a></li>
-                            <li><a href="#">Category 3</a></li>
+                        <ul class="acc-filter clearFix ">
+                          <li><a href="#" class="active policy-filter" data-policy="all">All</a></li>
+                          <li><a href="#" class="policy-filter" data-policy="compliance">Compliance</a></li>
+                          <li><a href="#" class="policy-filter" data-policy="risk">Risk, Crisis, and Safety</a></li>
                         </ul>
                         <h4 class="heading-3">Local Policy</h4>
                       <div class="row ">
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Gifts, Hospitality and Entertainment (GHE)</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-12 m-mb mb">
+                      </div>
+                    </div>
+                    <div class="inner">
+                    <h4 class="heading-3">Global Policy</h4>
+                      <div class="row ">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Access to Electronic Data Policy</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Anti-Bribery and Anti-Corruption Policy</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="risk">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Business Continuity and Crisis Management Policy</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">Find the Global and local policies that you need in our Policy center. To easily find what you're looking for, filter by area on the right-hand side of the page.</h4>
+                            <h4 class="title">Anti-Fraud Policy</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="risk">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Company Car Policy V6.0</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Compliance Audit and Information Requests</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-12 m-mb mb">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Compliance Audit and Information Requests Notification Template</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Compliance Policy</h4>
+                            <p>October 21, 2019</h4>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="compliance">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Conflict of Interest Policy</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="card">
+                  <div class="card-header" id="policy-header-two">
+                    <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policyTwo"
+                      aria-expanded="true" aria-controls="policyTwo">
+                      Digital and IT
+                      <small></small>
+                    </h3>
+                  </div>
 
+                  <div id="policyTwo" class="collapse in card-body" aria-labelledby="policy-header-two"
+                    data-parent="#navigationAccordion">
+                    <div class="inner">
+                    <h4 class="heading-3">Global Policy</h4>
+                      <div class="row ">
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Email Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">IT Security Policy (Group)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Network Security Policy (Group)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Information Classification Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Information Handling Guideline</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="policy-header-three">
+                    <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policyThree"
+                      aria-expanded="true" aria-controls="policyThree">
+                      Financing and Accounting
+                      <small></small>
+                    </h3>
+                  </div>
+
+                  <div id="policyThree" class="collapse in card-body" aria-labelledby="policy-header-three"
+                    data-parent="#navigationAccordion">
+                      
+                    <div class="inner">
+                      <h4 class="heading-3">Global Policy</h4>
+                      <div class="row ">
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Email Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
                         
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Cheque Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Finance Manual</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Tax Policy (Group)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Treasury Policy (Group)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Accounts Receivable Operating Manual</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                <div class="card">
+                  <div class="card-header" id="policy-header-Four">
+                    <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policyFour"
+                      aria-expanded="true" aria-controls="policyFour">
+                      Human Resources
+                      <small></small>
+                    </h3>
+                  </div>
+
+                  <div id="policyFour" class="collapse in card-body" aria-labelledby="policy-header-Four"
+                    data-parent="#navigationAccordion">
+                    <div class="inner">
+                      <ul class="acc-filter clearFix">
+                        <li><a href="#" data-policy="all" class="policy-filter active">All</a></li>
+                        <li><a href="#" data-policy="beft" class="policy-filter">Benefits and Wellbeing</a></li>
+                        <li><a href="#" data-policy="lt" class="policy-filter">Leave and Travel</a></li>
+                        <li><a href="#" data-policy="org" class="policy-filter">Organization</a></li>
+                    </ul>
+                      <h4 class="heading-3">Local Policy</h4>
+                      <div class="row ">
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="all">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Fringe Benefits Policy V2.1 (Local)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb policy-filterable">
+                          <div class="nav-cover new-pol-pad" data-policy="all">
+                            <h4 class="title">Health and Welfare Policy V1.5</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="lt">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Ferien- und Abwesenheitsreglement V1.5</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="lt">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Travel and Expense Reimbursement Policy V3.0 (Local)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb policy-filterable">
+                          <div class="nav-cover new-pol-pad" data-policy="org">
+                            <h4 class="title">Allgemeines Anstellungsreglement V1.5</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb policy-filterable" data-policy="org">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Flexible Work Policy (DKSH) V1.4</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="inner">
@@ -372,28 +580,47 @@
                       <div class="row ">
                         <div class="col-lg-12 m-mb mb">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">List of Preferred Hotels V2.3</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
+                        
                         <div class="col-lg-12 m-mb mb">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Gifts and Entertainment Policy_V1.1</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
+                        
                         <div class="col-lg-12 m-mb mb">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Flexible Work Arrangements Guideline V1.0</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
                         </div>
+                        
                         <div class="col-lg-12 m-mb mb">
                           <div class="nav-cover new-pol-pad">
-                            <h4 class="title">External Communication</h4>
+                            <h4 class="title">Belonging (Diversity Equity Inclusion) Policy V1.0 (Global)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Gifts and Entertainment Policy V1.1</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Organization Reporting Lines Policy V2.1</h4>
                             <p>October 21, 2019</p>
                             <i class="icon-download"></i>
                           </div>
@@ -401,80 +628,115 @@
                       </div>
                     </div>
                   </div>
-
-
                 </div>
-
+                
                 <div class="card">
-                  <div class="card-header" id="policy-header">
-                    <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policyTwo"
-                      aria-expanded="true" aria-controls="policyTwo">
-                      Communications and branding
+                  <div class="card-header" id="policy-header-five">
+                    <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policyFive"
+                      aria-expanded="true" aria-controls="policyFive">
+                      Legal
                       <small></small>
                     </h3>
                   </div>
 
-                  <div id="policyTwo" class="collapse in card-body" aria-labelledby="policy-header"
+                  <div id="policyFive" class="collapse in card-body" aria-labelledby="policy-header-five"
+                    data-parent="#navigationAccordion">
+                    
+                    <div class="inner">
+                    <h4 class="heading-3">Global Policy</h4>
+                      <div class="row ">
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Ad Hoc Publicity Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Contract Manual</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Data Breach Handling and Notification SOP</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Data Privacy Governance Structure</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                        
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Data Protection Policy (Group)</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="card">
+                  <div class="card-header" id="policy-header-six">
+                    <h3 class="mb-0 acc-title collapsed" data-toggle="collapse" data-target="#policySix"
+                      aria-expanded="true" aria-controls="policySix">
+                      Marketing and Communications
+                      <small></small>
+                    </h3>
+                  </div>
+
+                  <div id="policySix" class="collapse in card-body" aria-labelledby="policy-header-six"
                     data-parent="#navigationAccordion">
                     <div class="inner">
+                    <h4 class="heading-3">Global Policy</h4>
                       <div class="row ">
-
-                        <div class="col-lg-6 m-mb mb">
-                          <div class="nav-cover">
-                            <span class="icon icon-location"></span>
-                            <h4 class="title">External Communication</h4>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Business Unit/Function Announcements Policy</h4>
                             <p>October 21, 2019</p>
-                            <label>Local policy</label>
-                            <a href="#">Download</a>
+                            <i class="icon-download"></i>
                           </div>
                         </div>
-
-                        <div class="col-lg-6 m-mb mb">
-                          <div class="nav-cover">
-                            <span class="icon icon-global"></span>
-                            <h4 class="title">External Communication</h4>
-                            <p>February 22, 2019</p>
-                            <label>Global policy</label>
-                            <a href="#">Download</a>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Corporate Announcements Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-6 m-mb mb">
-                          <div class="nav-cover">
-                            <span class="icon icon-global"></span>
-                            <h4 class="title">External Communication</h4>
-                            <p>February 22, 2019</p>
-                            <label>Global policy</label>
-                            <a href="#">Download</a>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Corporate Design Directive</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-6 m-mb mb">
-                          <div class="nav-cover">
-                            <span class="icon icon-global"></span>
-                            <h4 class="title">External Communication</h4>
-                            <p>February 22, 2019</p>
-                            <label>Global policy</label>
-                            <a href="#">Download</a>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Corporate Wear Policy</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-6 m-mb mb">
-                          <div class="nav-cover">
-                            <span class="icon icon-global"></span>
-                            <h4 class="title">External Communication</h4>
-                            <p>February 22, 2019</p>
-                            <label>Global policy</label>
-                            <a href="#">Download</a>
+                        <div class="col-lg-12 m-mb mb">
+                          <div class="nav-cover new-pol-pad">
+                            <h4 class="title">Logo and Brand Name License Agreement</h4>
+                            <p>October 21, 2019</p>
+                            <i class="icon-download"></i>
                           </div>
                         </div>
-                        <div class="col-lg-6 m-mb mb">
-                          <div class="nav-cover">
-                            <span class="icon icon-global"></span>
-                            <h4 class="title">External Communication</h4>
-                            <p>February 22, 2019</p>
-                            <label>Global policy</label>
-                            <a href="#">Download</a>
-                          </div>
-                        </div>
-
                       </div>
                     </div>
                   </div>
@@ -558,7 +820,8 @@
 
 
 
-
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="js/"></script>
   <script src="js/dksh-apps.js"></script>
 
   <script>
@@ -576,19 +839,32 @@
 
       $("[data-toggle='toggle']").click(function () {
         var selector = $(this).data("target");
-        $(selector).toggleClass('in');
       });
 
       $('.navbar-toggler').on('click', function () {
         $(this).toggleClass("active");
       });
+
+     
     }
 
     var x = window.matchMedia("(max-width: 767px)")
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction) // Attach listener function on state changes
 
+    $('.policy-filter' ).on( 'click', function() {
+      $('.policy-filter').removeClass('active');
+      $(this).addClass('active');
+      var $policy = $(this).attr('data-policy');
+      if ( $policy == 'all' ) {
+        $( '.policy-filterable' ).removeClass( 'd-none' );    
+      } else {
+        $( '.policy-filterable' ).addClass( 'd-none' );
+        $( '.policy-filterable[data-policy=' + $policy + ']' ).removeClass( 'd-none' );
+      }
+    });
 
+   
   </script>
 
 
