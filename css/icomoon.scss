@@ -24,12 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
   
 }
+.icon-nova:before {
+  content: "\e92a";
+}
 .icon-download:before {
   content: "\e93c";
 }
 .icon-success-factor:before {
   content: "\e93a";
-  background-image: url(http://img03.en25.com/EloquaImages/clients/DKSH/%7B57306dd7-3a82-4937-adfc-73c49fae23ab%7D_bg-primary.jpg);
 }
 .icon-integrity:before {
   content: "\e93b";
