@@ -674,6 +674,9 @@ img {
     font-size: 26px;
   }
 }
+.shell .nav ul li > a i.icon-nova:before {
+  font-size: 44px;
+}
 .shell .nav ul li > a small, .shell .nav ul li > a .my-fav .nav-cover small:before, .my-fav .nav-cover .shell .nav ul li > a small:before, .shell .nav ul li > a .my-fav .nav-cover small:after, .my-fav .nav-cover .shell .nav ul li > a small:after, .shell .nav ul li > a .accordion.ft-acc-style-white .card-header .acc-title small:after, .accordion.ft-acc-style-white .card-header .acc-title .shell .nav ul li > a small:after {
   display: block;
   font-size: 22px;
