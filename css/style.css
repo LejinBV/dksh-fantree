@@ -159,14 +159,6 @@ a:hover {
   content: "\e937";
 }
 
-.icon-global:before {
-  content: "\e937";
-}
-
-.icon-location:before {
-  content: "\e938";
-}
-
 .icon-download-pdf:before {
   content: "\e936";
 }
@@ -268,7 +260,7 @@ a:hover {
 }
 
 .icon-salesforce:before {
-  content: "\e92a";
+  content: "\e93d";
 }
 
 .icon-trademark-database:before {
